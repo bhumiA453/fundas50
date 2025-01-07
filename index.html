@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Fundas@50Registration</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css">
+        <!-- jQuery library -->
+    	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    	<style>
+            .blink {
+                animation: blinker 1.5s linear infinite;
+                color: red;
+                font-family: sans-serif;
+                font-size: x-large;
+            }
+            @keyframes blinker {
+                50% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <!-- <a class="navbar-brand fw-bold" href="#page-top">Fundas@50</a> -->
+                 <a href="#!"><img class="app-badge" src="assets/img/fundas-logo.png" alt="..." /></a>
+               
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <!-- <li class="nav-item"><a class="nav-link me-lg-3" href="#features">Features</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#download">Download</a></li> -->
+                    </ul>
+                    <!-- <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Send Feedback</span>
+                        </span>
+                    </button> -->
+                </div>
+            </div>
+        </nav>
+        <!-- Mashead header-->
+        <header class="masthead text-center bg-gradient-primary-to-secondary">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12">
+                        <!-- Mashead text and app badges-->
+                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                            <h6 class="display-6 lh-1 mb-3 text-white">Fundas Golden Reunion 2025 - Registration Form</h6>
+                            <!-- <p class="lead fw-normal text-muted mb-5">REGISTRATION FORM</p> -->
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- App features section-->
+        <section id="features">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-12 order-lg-1 mb-5 mb-lg-0">
+
+                    	<!-- Form Section Start -->
+                    	<form action="register.php" id="registerForm" method="post">
+                    	  	<div class="container mt-0 px-5">
+					            <!-- <div class="mb-4">
+					                <h2>Confirm order and pay</h2>
+					            <span>please make the payment, after that you can enjoy all the features and benefits.</span>
+					            </div> -->
+						        <div class="row">
+						        	
+							            <div class="col-md-8">
+							               <div class="card p-3">
+							                    <h6 class="text-uppercase">PERSONAL PARTICULARS</h6>
+							                    <div class="inputbox mt-1"> 
+							                    	<span>FUNDA's Name</span> 
+							                    	<input type="text" name="name" id="name" class="form-control" required="required"> 
+							                    	<div class="invalid-feedback" id="nameError"></div> <!-- Error message for Name -->
+							                    </div>
+							                    <div class="row mt-1">
+						                            <div class="col-md-6">
+						                                <div class="inputbox mt-1 mr-2"> 
+						                                	<span>Email</span> 
+						                    				<input type="text" name="email" id="email" class="form-control" required="required"> 
+						                    				<div class="invalid-feedback" id="emailError"></div> <!-- Error message for Email -->
+						                                </div>
+						                            </div>
+
+						                            <div class="col-md-6">
+						                                <div class="inputbox mt-1 mr-2"> 
+						                                	<span>WhatsApp No. </span> 
+						                    				<input type="text" name="phone" id="phone"class="form-control" placeholder="Phone Number">
+						                    				<div class="invalid-feedback" id="phoneError"></div>
+						                                </div>
+						                            </div>
+						                        </div>
+						                        <div class="row mt-1">
+						                            <div class="col-md-6">
+						                                <div class="inputbox mt-1 mr-2"> 
+						                                	<span>Spouse/ Partner accompanying?</span>
+							                    			<select class="form-select" name="partner_accompany" id="partner_accompany" aria-label="Default select example" required>
+															  <option selected>Select</option>
+															  <option value="1">YES</option>
+															  <option value="0">NO</option>
+															</select>
+						                                </div>
+						                            </div>
+
+						                             <div class="col-md-6">
+						                                <div class="inputbox mt-1 mr-2"> 
+						                                	<span>Spouse/ Partner Name </span>
+							                    			<input type="text" name="partner_name" id="partner_name" class="form-control" disabled="">  
+						                                </div>
+						                            </div>
+						                        </div>
+							                    <div class="mt-4 mb-4">
+							                        <h6 class="text-uppercase">HOTEL ROOM RESERVATION - ARRIVAL & DEPARTURE</h6>
+							                        <div class="row mt-1">
+							                            <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Reunion Start Date</span>
+							                                	<input type="Date" name="c_start_dt" id="c_start_dt" class="form-control" value="2025-02-22" disabled>  
+							                                </div>
+							                            </div>
+
+							                             <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Reunion End Date</span> 
+							                                	<input  type="Date" name="c_end_dt" id="c_end_dt" class="form-control" value="2025-02-25" disabled> 
+							                                </div>
+							                            </div>
+							                        </div>
+
+							                        <div class="row mt-1">
+							                            <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>If arriving before 22 Feb, please specify the date of arrival</span> 
+							                                	<input type="Date" name="arrival_date" id="arrival_date" class="form-control" min="2025-02-19" max="2025-02-21"> 
+							                                </div>
+							                            </div>
+							                             <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>If extending after the meeting, plesae specify date of departure</span>
+							                                	<input  type="Date" name="departure_date" id="departure_date" class="form-control" min="2025-02-26" max="2025-02-28">  
+							                                </div>
+							                            </div>
+							                        </div>
+
+							                        <div class="row mt-1">
+							                        	<div class="col-md-12">
+							                        		<div class="inputbox mt-1"> 
+							                        			<span>Type of Room</span>
+										                    	<select class="form-select" name="room_type" id="room_type" aria-label="Default select example" disabled>
+																  <option selected>Select</option>
+																  <option value="1">Single Occupancy</option>
+																  <option value="2">Double Occupancy</option>
+																</select>
+																<input type="hidden" name="h_room_type" id="h_room_type">
+										                    </div>
+							                        	</div>
+							                        </div>
+							                    </div>
+
+							                    <div class="mt-4 mb-4 calculation" style="display:none">
+							                        <h6 class="text-uppercase">AMOUNT TO BE PAID TO HOTEL</h6>
+							                        <div class="row mt-1">
+							                            <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Trip Extension (no. of nights)</span> 
+							                                	<input type="text" name="tripExtensionNights" id="tripExtensionNights" class="form-control"> 
+							                                </div>
+							                            </div>
+
+							                            <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Amount due for trip extension nights</span> 
+							                                	<input type="text" name="tripExtensionAmount" id="tripExtensionAmount" class="form-control">
+							                                	
+							                                </div>
+							                            </div>
+							                        </div>
+							                        <div class="row mt-1">
+							                            <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Amount Due for Reunion <br> Nights (22 - 25 Feb)</span> 
+							                                	<input type="text" name="conferenceAmount" id="conferenceAmount" class="form-control">
+							                                	
+							                                </div>
+							                            </div>
+							                            <div class="col-md-6">
+							                                <div class="inputbox mt-1 mr-2">
+							                                	<span>Amount due for Common Program <br>Charges</span>  
+							                                	<input type="text" name="programCharges" id="programCharges" class="form-control">
+							                                	
+							                                </div>
+							                            </div>
+							                            <div class="col-md-12">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span class="fs-6"><strong>Total Amount to be paid to Sterling Holidays</strong></span> 
+							                                	<input type="text" name="totalSterlingAmount" id="totalSterlingAmount" class="form-control">
+							                                	
+							                                </div>
+							                                <div class="mt-4 mb-4 d-flex justify-content-between">
+									                            <button class="btn btn-success px-4" id="pay_sterling">
+									                            	<a href="https://sterlingpay.nowpay.co.in/" target="_blank" style="text-decoration: none; color: inherit;">
+									                            		Pay to Sterling
+									                            	</a>
+									                        	</button>
+									                        	<p>Fill reference no. <strong class="blink">FUNDAS@50</strong></p>
+									                        </div>
+									                        <div class="col-md-12">
+									                        	<table class="table-bordered col-md-12">
+									                        		<tr>
+									                        			<th class="col-md-2">Note:</th>
+									                        			<td>Email these  payment details to <strong>Sterling Holidays, and Vimal Kumar,</strong> with <strong>subject line: "Fundas@50".</strong> Copy paste the email addresses provideds here, to send out your email. </td>
+									                        		</tr>
+									                        		<tr>
+									                        			<th>Email to:</th>
+									                        			<td>resv.puri@sterlingholiday.com</td>
+									                        		</tr>
+									                        		<tr>
+									                        			<th>Copy to:</th>
+									                        			<td>dr.vimal.kumar@gmail.com</td>
+									                        		</tr>
+									                        		<tr>
+									                        			<td colspan="2" class="small text-primary">You will receive a payment confirmation email from Sterling Holidays, once the amount is received by them</td>
+									                        		</tr>
+									                        	</table>
+									                        </div>
+							                            </div>
+							                        </div>
+							                        <div class="row mt-1">
+							                        	
+							                            <div class="col-md-3">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Enter Date of <br> payment:</span> 
+							                                	<input type="Date" name="payment_date" id="payment_date" class="form-control" required> 
+							                                </div>
+							                            </div>
+							                            <div class="col-md-4">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Enter Bank/ Credit  Card Name:</span>
+							                                	<input type="text" name="card_name" id="card_name" class="form-control" required>  
+							                                </div>
+							                            </div>
+							                            <div class="col-md-4">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span>Enter Bank/ Credit Card Ref No. </span>
+							                                	<input type="text" name="card_ref_no" id="card_ref_no" class="form-control" required>  
+							                                </div>							
+							                            </div>
+							                            <div class="col-md-1 flex-column mb-2 mt-auto">
+							                        		<button onclick="prepareMail(event)" class="btn btn-sm btn-primary" data-bs-toggle="tooltip" data-bs-placement="up" title="Copy Format to clipboard">
+							                        			<i class="bi bi-files text-white"></i>
+							                        		</button>
+							                            </div>
+							                            <div class="invalid-feedback" id="paymentError"></div>
+							                           							                            
+							                        </div>
+							                        <p id="sterling-alert-message" class="text-danger" style="display:none;"></p>
+							                    </div>
+
+							                    <div class="mt-4 mb-4 calculation" style="display:none">
+							                        <h6 class="text-uppercase">ADDITIONAL COMMON PROGRAM CHARGES TO BE PAID TO RAMESHWAR DAYAL</h6>
+							                        <div class="row mt-1">
+							                            
+							                            <div class="col-md-12">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span class="">Total amount to be transferred</span>
+							                                	<input type="text" name="amountRameshwar" id="amountRameshwar" class="form-control">
+							                                	 
+							                                </div>
+							                            </div>
+
+							                            <div class="col-md-12 mt-2">
+							                            	<p class="bg-danger text-white px-2 rounded">Please use the following bank details for tranferring:</p>
+							                            	<table class="table-bordered col-md-12">
+							                            		<tr>
+							                            			<th>Benenficiary Name:</th>
+							                            			<td>RAMESHWAR DAYAL</td>
+							                            		</tr>
+							                            		<tr>
+							                            			<th>Account No.:</th>
+							                            			<td>084301514373</td>
+							                            		</tr>
+							                            		<tr>
+							                            			<th>Bank:</th>
+							                            			<td>ICICI Bank, Dwaraka Sector 6, New Delhi</td>
+							                            		</tr>
+							                            		<tr>
+							                            			<th>IFS Code:</th>
+							                            			<td>ICIC0000843</td>
+							                            		</tr>
+							                            		<tr>
+							                            			<th>PAYTM:</th>
+							                            			<td>+919289947937</td>
+							                            		</tr>
+							                            		<tr>
+							                            			<th>SWIFT CODE:</th>
+							                            			<td>ICICINBBNRI</td>
+							                            		</tr>
+							                            	</table>
+							                            </div>
+
+							                            <div class="row mt-1">
+							                            	<div class="col-md-6 mt-2">
+								                                <div class="inputbox mt-1 mr-2"> 
+								                                	<span class="">Bank Reference Number </span>
+								                                	<input type="text" name="bank_ref_no" id="bank_ref_no" class="form-control">
+								                                </div>
+								                            </div>
+								                            <div class="col-md-6" style="margin-top: 2.4rem !important;">
+								                        		<button onclick="prepareDayalMail(event)" class="btn bg-gradient-primary-to-secondary btn-sm" data-bs-toggle="tooltip" data-bs-placement="up" title="Copy Format to clipboard">
+								                        			<i class="bi bi-files text-white"></i>
+								                        		</button>
+								                        		
+								                            </div>
+								                            <div class="col-md-12 small text-primary">
+								                            	<span id="dayal-alert-message" class="mt-2 text-danger" style="display:none;"></span>
+								                            	<p><b>Note:</b> Once transfer is completed send the bank reference number to Rameshwar on <strong>rdayaliima301@gmail.com</strong></p>
+								                            </div>
+							                            </div>
+							                            
+							                            <div class="col-md-12 mt-2">
+							                                <div class="inputbox mt-1 mr-2"> 
+							                                	<span class="fs-5"><strong>TOTAL ESTIMATED EXPENSE </strong></span>
+							                                	<input type="text" name="totalExpense" id="totalExpense" class="form-control">
+							                                	 
+							                                </div>
+							                            </div>
+							                        </div>
+							                    </div>
+							                    <div class="mt-4 mb-4 d-flex justify-content-between">
+						                            <button class="btn btn-success px-4" id="submit">Save </button>
+						                        </div>
+						                        <div id="alert-message" class="mt-2"></div>
+							                </div>
+
+
+							                <!-- <div class="mt-4 mb-4 d-flex justify-content-between">
+							                	<span>Previous step</span>
+							                            <button class="btn btn-success px-3">Pay $840</button>
+							                </div> -->
+							            </div>
+							        
+						            <div class="col-md-4">
+
+						                <div class="card card-blue p-3 text-white mb-3">
+						                   <h6 class="">ROOM TARRIF/ NIGHT</h6>
+						                   <p style="font-size: 12px;">Amount in INR (including GST)</p>
+
+						                    <span>Trip Extension Nights</span>
+
+						                    <div class="hightlight">
+						                    	<p><strong>Single Occupancy</strong> : ₹ 8,260</p>
+						                        <p><strong>Double Occupancy</strong> : ₹ 10,620</p>
+						                    </div>
+
+						                    <span>Reunion Nights (22-25 Feb)</span>
+
+						                    <div class="hightlight">
+						                    	<p><strong>Single Occupancy</strong> : ₹ 10,107</p>
+						                        <p><strong>Double Occupancy</strong> : ₹ 14,313</p>
+						                    </div>
+						                </div>
+
+						                <div class="card card-blue p-3 text-white mb-3">
+						                   <span>COMMON REUNION EXPENSES </span><br>
+
+						                    <span>Payable to Sterling</span>
+
+						                    <div class="hightlight">
+						                    	<p><strong>Single Occupancy</strong> : ₹ 2,565</p>
+						                        <p><strong>Double Occupancy</strong> : ₹ 5,130</p>
+						                    </div>
+
+						                    <span>Payable to Rameshwar</span>
+
+						                    <div class="hightlight">
+						                    	<p><strong>Single Occupancy</strong> : ₹ 9,500</p>
+						                        <p><strong>Double Occupancy</strong> : ₹ 19,000</p>
+						                    </div>
+						                </div>
+
+						            </div>
+						            
+						        </div>					          
+					      	</div>
+					      </form>
+                    	<!-- Form Section End -->
+                        
+                    </div>
+                    <!-- <div class="col-lg-4 order-lg-0">
+                        
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer-->
+        <footer class="bg-black text-center py-5">
+            <div class="container px-5">
+                <div class="text-white-50 small">
+                    <div class="mb-2">&copy; FUNDAS@50 2024. All Rights Reserved.</div>
+                    <!-- <a href="#!">Privacy</a>
+                    <span class="mx-1">&middot;</span>
+                    <a href="#!">Terms</a> -->
+                </div>
+            </div>
+        </footer>
+        
+        <script>
+        	// Function to add thousand separators to a number
+			function thousandSeparators(number) {
+			    return number.toLocaleString("en-IN"); // For Indian numbering system
+			}
+
+			function prepareDayalMail(event)
+			{
+				event.preventDefault();
+			    var cardRefNo = document.getElementById('bank_ref_no').value;
+
+			    // Validate input fields
+			    if (!cardRefNo) {
+			        alert("Please fill out all fields before sending the email.");
+			        return; // Stop execution if validation fails
+			    }
+
+			    const body = `Dear Team,\n\nPlease find the payment details below:\n\n` +
+			        `Bank Ref No.: ${cardRefNo}\n\nThank you.`;
+
+			    // Copy to clipboard using the Clipboard API
+			    navigator.clipboard.writeText(body).then(() => {
+			    	$('#dayal-alert-message').show();
+			        $('#dayal-alert-message').text("Payment details copied to clipboard!");
+			        setTimeout(function () {
+				                	$('#dayal-alert-message').hide();
+				                }, 5000);
+			    }).catch(err => {
+			        console.error("Could not copy text: ", err);
+			        $('#dayal-alert-message').show();
+			        $('#dayal-alert-message').text("Failed to copy text. Please try again.");
+			        setTimeout(function () {
+				                	$('#dayal-alert-message').hide();
+				                }, 5000);
+			    });
+			}
+
+			function prepareMail(event) {
+				event.preventDefault();
+			    // Get input field values
+			    var paymentDate = document.getElementById('payment_date').value;
+			    var cardName = document.getElementById('card_name').value;
+			    var cardRefNo = document.getElementById('card_ref_no').value;
+
+			    // Validate input fields
+			    if (!paymentDate || !cardName || !cardRefNo) {
+			        alert("Please fill out all fields before sending the email.");
+			        return; // Stop execution if validation fails
+			    }
+			    // Plain text email body
+			    const body = `Dear Team,\n\nPlease find the payment details below:\n\n` +
+			        `Date of Payment: ${paymentDate}\n` +
+			        `Bank/Credit Card Name: ${cardName}\n` +
+			        `Bank/Credit Card Ref No.: ${cardRefNo}\n\nThank you.`;
+
+			    // Copy to clipboard using the Clipboard API
+			    navigator.clipboard.writeText(body).then(() => {
+
+			        $('#sterling-alert-message').show();
+			        $('#sterling-alert-message').text("Payment details copied to clipboard!");
+			        setTimeout(function () {
+				                	$('#sterling-alert-message').hide();
+				                }, 5000);
+			    }).catch(err => {
+			        console.error("Could not copy text: ", err);
+			        $('#sterling-alert-message').show();
+			        $('#sterling-alert-message').text("Failed to copy text. Please try again.");
+			        setTimeout(function () {
+				                	$('#sterling-alert-message').hide();
+				                }, 5000);
+			    });
+
+			    /*// Construct mailto link
+			    const mailtoLink = `mailto:${emailRecipients}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+			    // Redirect to mailto link
+			    window.location.href = mailtoLink;*/
+			}
+
+	        $(document).ready(function () {      
+
+	        	// -----Country Code Selection
+				$("#phone").intlTelInput({
+					initialCountry: "in",
+					separateDialCode: true,
+					utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/11.0.4/js/utils.js"
+				});
+	            // Email validation
+	            $("input[name='email']").on("input", function () {
+	                const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+				    const emailValue = $(this).val();
+
+				    // Check if the email field is not empty and matches the pattern
+				    if (!emailPattern.test(emailValue)) {
+				        $(this).addClass("is-invalid");
+				        $('#emailError').text('Please enter a valid email address.');
+				    } else {
+				        // If the email is valid, remove the invalid class and clear the error message
+				        $(this).removeClass("is-invalid");
+				        $('#emailError').text('');
+				    }
+
+				    // If the email field is empty, remove the invalid class and clear the error message
+				    if (emailValue === '') {
+				        $(this).removeClass("is-invalid");
+				        $('#emailError').text('');
+				    }
+	            });
+
+	            $("input[name='email']").on("blur", function () {
+			        const email = $(this).val();
+			        if (email) {
+			            $.ajax({
+			                url: 'check_email.php', // URL to the PHP script
+			                method: 'POST',
+			                data: { email: email },
+			                dataType: 'json',
+			                success: function (response) {
+			                    if (response.success) {
+			                    	console.log(response.data);
+			                    	$("#name").val(response.data.name);
+			                    	$("#phone").val(response.data.whatsapp_no);
+			                    	$("#partner_accompany").val(response.data.partner_accompany);
+			                    	$("#tripExtensionNights").val(response.data.tripExtensionNights);
+			                    	$("#tripExtensionAmount").val(response.data.tripExtensionAmount);
+			                    	$("#conferenceAmount").val(response.data.conferenceAmount);
+			                    	$("#programCharges").val(response.data.programCharges);
+			                    	$("#totalSterlingAmount").val(response.data.totalSterlingAmount);
+			                    	$("#amountRameshwar").val(response.data.amountRameshwar);
+			                    	$("#totalExpense").val(response.data.totalExpense);
+			                        // Pre-fill form fields with data from the response
+			                        $("input[name='arrival_date']").val(response.data.arrival_date);
+			                        $("input[name='departure_date']").val(response.data.departure_date);
+			                        $("#room_type").val(response.data.room_type);
+			                        $(".calculation").show(); // Optionally show calculation div if needed
+			                    } else {
+			                        alert(response.message); // Handle case when email is not found
+			                        $("#registerForm")[0].reset(); // Reset the form if no match
+			                    }
+			                },
+			                error: function () {
+			                    alert("Error fetching data. Please try again.");
+			                }
+			            });
+			        }
+			    });
+
+	            // Phone validation
+	            $("input[name='phone']").on("input", function () {
+	                const phonePattern = /^[0-9+()]*$/;
+	                if (!phonePattern.test($(this).val())) {
+	                    $(this).addClass("is-invalid");
+	                    $('#phoneError').text('Please enter a valid phone number.');
+	                } else {
+	                    $(this).removeClass("is-invalid");
+	                }
+	            });
+	       
+	            $('#partner_accompany, #arrival_date, #departure_date').on('change', function (e) {
+		            
+		            if($('#partner_accompany').val() == 1)
+	            	{
+	            		$('#partner_name').prop('disabled', false);
+	            		$('#room_type').val('2');
+	            		$('#h_room_type').val('2');
+	            	}else{
+	            		$('#partner_name').prop('disabled', true);
+                		$('#partner_name').val('');
+                		$('#room_type').val('1');
+                		$('#h_room_type').val('1');
+	            	}
+		      
+			        const rates = {
+				        "1": { extension: 8260, conference: 10107, sterling: 2565, rameshwar: 9500 }, // Single Occupancy
+				        "2": { extension: 10620, conference: 14313, sterling: 5130, rameshwar: 19000 } // Double Occupancy
+				    };
+
+			        const conferenceStart = new Date("2025-02-22");
+                	const conferenceEnd = new Date("2025-02-25");
+                	const roomType = $('#room_type').val();
+                	const arrivalDateValue = $('#arrival_date').val();
+			        const departureDateValue = $('#departure_date').val();
+
+			        const arrivalDate = arrivalDateValue ? new Date(arrivalDateValue) : null;
+			        const departureDate = departureDateValue ? new Date(departureDateValue) : null;
+
+                	let preConferenceNights = 0;
+				    let postConferenceNights = 0;
+
+                	if(arrivalDateValue != '' || departureDateValue != '')
+                	{
+                		// Calculate trip extension nights
+				        if (arrivalDate && arrivalDate < conferenceStart) {
+				            preConferenceNights = Math.ceil((conferenceStart - arrivalDate) / (1000 * 60 * 60 * 24));
+				        }
+
+				        if (departureDate && departureDate > conferenceEnd) {
+				            postConferenceNights = Math.ceil((departureDate - conferenceEnd) / (1000 * 60 * 60 * 24));
+				        }
+
+				    }
+
+			        const extensionNights = preConferenceNights + postConferenceNights; // Define this variable properly.
+			        // Calculate amounts
+			        const tripExtensionAmount = extensionNights * rates[roomType].extension;
+			        const conferenceAmount = rates[roomType].conference * 3; // 3 nights for the conference
+			        const programCharges = rates[roomType].sterling;
+			        const amountRameshwar = rates[roomType].rameshwar;
+
+			        const totalSterlingAmount = tripExtensionAmount + conferenceAmount + programCharges;
+			        const totalExpense = totalSterlingAmount + amountRameshwar;
+
+			        // Update values in the form
+			        $("#tripExtensionNights").val(extensionNights);
+			        $("#tripExtensionAmount").val(`₹ ${thousandSeparators(tripExtensionAmount)}`);
+			        $("#conferenceAmount").val(`₹ ${thousandSeparators(conferenceAmount)}`);
+			        $("#programCharges").val(`₹ ${thousandSeparators(programCharges)}`);
+			        $("#totalSterlingAmount").val(`₹ ${thousandSeparators(totalSterlingAmount)}`);
+			        $("#amountRameshwar").val(`₹ ${thousandSeparators(amountRameshwar)}`);
+			        $("#totalExpense").val(`₹ ${thousandSeparators(totalExpense)}`);
+
+			        // Show the calculation div
+			        $(".calculation").show();
+                	                			            
+		        });
+
+				// AJAX form submission
+		        $('#submit').on('click', function (e) {
+		        	e.preventDefault(); // Prevent default form submission
+		            var isValid = true; // To check overall form validation
+		            // Reset previous errors
+			        $('.form-control').removeClass('is-invalid');
+			        $('.invalid-feedback').text('');
+
+			        // Validation for Name field
+			        if ($('#name').val() === '') {
+			            $('#name').addClass('is-invalid');
+			            $('#nameError').show();
+			            $('#nameError').text('Name is required.');
+			            isValid = false;
+			        }
+		            
+			        // Validation for Email field
+			        if ($('#email').val() === '') {
+			            $('#email').addClass('is-invalid');
+			            $('#emailError').show();
+			            $('#emailError').text('Email is required.');
+			            isValid = false;
+			        }
+
+			        // Validation for Phone field
+			        if ($('#phone').val() === '') {
+			            $('#phone').addClass('is-invalid');
+			            $('#phoneError').show();
+			            $('#phoneError').text('Phone number is required.');
+			            isValid = false;
+			        } 
+
+			    	// Validation for Payment Date field
+			        if ($('#payment_date').val() === '') {
+			            $('#payment_date').addClass('is-invalid');
+			            $('#paymentError').show();
+			            $('#paymentError').text('Payment Date is required.');
+			            isValid = false;
+			        } 
+
+			        // Validation for Payment Date field
+			        if ($('#card_name').val() === '') {
+			            $('#card_name').addClass('is-invalid');
+			            $('#paymentError').show();
+			            $('#paymentError').text('Card Name is required.');
+			            isValid = false;
+			        } 
+
+			        // Validation for Payment Date field
+			        if ($('#card_ref_no').val() === '') {
+			            $('#card_ref_no').addClass('is-invalid');
+			            $('#paymentError').show();
+			            $('#paymentError').text('Card Reference Number is required.');
+			            isValid = false;
+			        } 
+
+			        // Get the full number
+				    const fullPhoneNumber = $("#phone").intlTelInput("getNumber");
+
+				    // If you need to send it in a form, add it to a hidden input or process it accordingly
+				    $("input[name='phone']").val(fullPhoneNumber);
+
+			        if (isValid) {
+		            	$.ajax({
+			                url: 'register.php',
+			                type: 'POST',
+			                data: $('form').serialize(), // Serialize form data
+			                success: function (response) {
+			                    // Handle success (display a success message or redirect)
+			                    // alert("Registration successful!");
+			                    // Display success message using Bootstrap alert
+			                    $('#alert-message').html(`
+				                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+				                            Registration successful!
+				                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				                        </div>
+				                `);
+				                setTimeout(function () {
+				                	$('#alert-message').hide();
+				                }, 2500);
+			                    
+			                    // Reset the form
+					            $("#registerForm")[0].reset();
+
+					            // Optionally hide the calculation section
+					            $(".calculation").hide();
+			                    // Scroll to the alert message
+			                    // scrollToMessage();
+			                },
+			                error: function (xhr, status, error) {
+			                    // Handle errors
+			                    // alert("There was an error: " + error);
+			                    // Display error message using Bootstrap alert
+			                    $('#alert-message').html(`
+				                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+				                            There was an error: ${error}
+				                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				                        </div>
+				                `);
+				                setTimeout(function () {
+				                	$('#alert-message').hide();
+				                }, 2500);
+			                    
+			                    // Scroll to the alert message
+			                    // scrollToMessage();
+			                }
+			            });
+		            }else{
+		            	// Scroll to the first error message if any
+            			// scrollToMessage();
+		            }
+		        });
+	        });
+
+			// Function to scroll to the response message
+		    function scrollToMessage() {
+		        $('html, body').animate({
+		            scrollTop: $('#alert-message').offset().top
+		        }, 1000);
+		    }
+	    </script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput-jquery.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
